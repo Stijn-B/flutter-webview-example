@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+import 'src/web_view_stack.dart';
 
 void main() {
   runApp(
@@ -20,9 +20,7 @@ class _WebViewAppState extends State<WebViewApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const WebView(
-        initialUrl: 'https://your_website.com',
-      ),
+      body: const WebViewStack(),
     );
   }
 }
